@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Cloud Project</title>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"
+        integrity="sha512-zhHQR0/H5SEBL3Wn6yYSaTTZej12z0hVZKOv3TwCUXT1z5qeqGcXJLLrbERYRScEDDpYIJhPC1fk31gqR783iQ=="
+        crossorigin="anonymous" defer></script>-->
+  <script type="module" crossorigin src="/assets/index-Co6hsbyp.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-i9yCp0VX.css">
+</head>
+
+<body>
+    <div class="cloud-canvas-wrap" id="cloud-canvas-wrap">
+        <canvas id="webgl-canvas" width="1200" height="800"></canvas>
+        <!-- p5 canvas will go here -->
+    </div>
+    <form class="color-select-wrap">
+        <label class="color-select" style="background-color:red">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="red">
+        </label>
+        <label class="color-select" style="background-color:orange">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="orange">
+        </label>
+        <label class="color-select" style="background-color:yellow">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="yellow">
+        </label>
+        <label class="color-select" style="background-color:green">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="green">
+        </label>
+        <label class="color-select" style="background-color:blue">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="blue">
+        </label>
+        <label class="color-select" style="background-color:purple">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="purple">
+        </label>
+        <label class="color-select" style="background-color:black">
+            <input type="radio" class="radio-button" name="color-select" autocomplete="off" value="black"
+                checked="checked">
+        </label>
+    </form>
+    <form class="brush-select-wrap">
+        <label class="brush-select">
+            <input type="radio" class="radio-button" name="brush-select" autocomplete="off" value="0">
+        </label>
+    </form>
+    <form style="display: flex; flex-direction: column;">
+        <div class="horiz">
+            <input type="range" id="scroll-speed-slider" step="0.1" min="0" max="1" value="0.6" />
+            <p>Scroll Speed</p>
+        </div>
+        <div class="horiz">
+            <input type="range" id="cloud-weight-slider" step="0.01" min="0" max="1" value="1" />
+            <p>Cloud Weight</p>
+        </div>
+        <div class="horiz">
+            <input type="range" id="cloud-clumping-slider" step="0.01" min="0" max="1" />
+            <p>Cloud Clumping</p>
+        </div>
+        <div class="horiz">
+            <input type="range" id="thin-clouds-slider" step="0.01" min="0" max="1" />
+            <p>Thin Clouds</p>
+        </div>
+        <button type="reset" style="width: 150px">Reset</button>
+    </form>
+</body>
